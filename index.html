@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Septio Yasin Tiaratomo - Portofolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<link rel="icon" href="img/logo.jpg">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Meta Tags -->
+	<meta name="title" content="Septio Yasin Tiaratomo - Portofolio">
+	<meta name="description" content="Septio Yasin Tiaratomo portofolio">
+
+	<!-- Open Graph / LinkedIn Preview -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://septio-portofolio.com/">
+	<meta property="og:title" content="Septio Yasin Tiaratomo - Portofolio">
+	<meta property="og:description" content="Cloud Computing Enthusiast | Web Developer | Mahasiswa Teknik Informatika UNINDRA">
+	<meta property="og:image" content="./img/profile.jpg">
+<body id="body">
+<!-- Tambahan agar navbar sticky -->
+	<style>
+		.navbar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background: #012e3d;;
+			z-index: 1000;
+			border-bottom: 1px solid #ddd;
+		}
+		body {
+			padding-top: 80px; /* sesuaikan tinggi navbar */
+			margin: 0;
+		}
+		html {
+			scroll-behavior: smooth; /* biar pindah section halus */
+		}
+	</style>
+</head>
+<body id="body">
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+    <div class="loading-item"></div>
+  </div>
+
+  <!-- Navbar -->
+<div class="main">
+  <div class="navbar notload" id="navbar">
+    <div class="container">
+      <div class="navbar-nav">
+        <!-- Brand Logo + Nama -->
+        <div class="navbar-brand">
+          <a href="#body" style="display:flex; align-items:center; text-decoration:none; color:inherit;">
+            <img src="./img/foto profil.png" alt="logo" draggable="false" style="height:40px; margin-right:8px;">
+            <span>Septio</span>
+          </a>
+        </div>
+
+          <span class="navbar-toggler" id="toggler">
+            <i onclick="toggleNavbar()" id="navbar-toggler" class="fas fa-bars"></i>
+          </span>
+
+          <div class="navs"> 
+            <ul id="navs">
+              <li><a href="#skills" onclick="toggleNavbar()">Keahlian</a></li>
+              <li><a href="#tools" onclick="toggleNavbar()">Tools</a></li>
+              <li><a href="#projects" onclick="toggleNavbar()">Proyek</a></li>
+              <li><a href="#certificates" onclick="toggleNavbar()">Sertifikat</a></li>
+              <li><a href="https://github.com/SeptioYasinTiaratomo" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="jumbotron-box">
+      <div class="container">
+        <div class="jumbotron">
+          <div class="jumbotron-item notload">
+            <img src="./img/foto profil.png" alt="Foto Profil Septio" draggable="false">
+          </div>
+          <div class="jumbotron-item notload" notload-delay="true">
+            <h1>Hello, I’m <strong>Septio Yasin Tiaratomo</strong></h1>
+            <p style="font-size:18px; line-height:1.6; text-align:justify;">
+              <strong>Cloud Computing Enthusiast | Informatics Engineering Student | Bangkit Academy Alumnus</strong>
+            </p>
+            <p style="font-size:16px; line-height:1.6; text-align:justify; margin-top:10px;">
+              I am a 6th-semester <strong>Informatics Engineering student at UNINDRA</strong> (GPA 3.66) 
+              with a strong focus on <strong>Cloud Engineering</strong>. 
+              I gained valuable experience through the <strong>Bangkit Academy 2024</strong> program, 
+              actively contribute to the community through <strong>Karang Taruna</strong> as part of the Education & Training Division, 
+              and previously worked as a <strong>Game Master at Byebeli Experience Jakarta</strong>, 
+              where I honed my leadership, communication, and problem-solving skills.
+            </p>
+
+            <div class="sosmed">
+              <a href="mailto:septioyasin87@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/septio-yasin-tiaratomo-458128309/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/SeptioYasinTiaratomo" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://instagram.com/septtioo" target="_blank" id="showme"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1VnF2kF-_RdTT9MAl9Oh15xVtxh8089FC/view?usp=sharing" class="btn" target="_blank">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gelombang transisi -->
+  <div class="main2">  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0099ff" fill-opacity="1" d="M0,128L0,32L288,32L288,160L576,160L576,32L864,32L864,128L1152,128L1152,96L1440,96L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"></path>
+    </svg>
+
+    <!-- Skills -->
+    <div class="skills"> 
+      <h1 class="skills-t" id="skills">Skills</h1>
+      <div class="container skills-grid">
+        <div class="skill"><i class="fa-solid fa-cloud"></i> Cloud Engineering (GCP & AWS)</div>
+        <div class="skill"><i class="fa-solid fa-network-wired"></i> Sistem & Jaringan</div>
+        <div class="skill"><i class="fa-solid fa-users"></i> Kepemimpinan & Kerja Tim</div>
+        <div class="skill"><i class="fa-solid fa-microphone"></i> Presentasi Publik</div>
+        <div class="skill"><i class="fa-solid fa-diagram-project"></i> Manajemen Proyek</div>
+        <div class="skill"><i class="fa-solid fa-code"></i> Pemrograman (HTML, CSS, Java, PHP, SQL, JS)</div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skills"> 
+      <h1 class="skills-t" id="softskills">Soft Skills</h1>
+      <div class="container skills-grid">
+        <div class="skill"><i class="fa-solid fa-user-tie"></i> Leadership</div>
+        <div class="skill"><i class="fa-solid fa-people-group"></i> Teamwork</div>
+        <div class="skill"><i class="fa-solid fa-comments"></i> Communication</div>
+        <div class="skill"><i class="fa-solid fa-microphone-lines"></i> Public Speaking</div>
+        <div class="skill"><i class="fa-solid fa-handshake"></i> Negotiation</div>
+        <div class="skill"><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+        <div class="skill"><i class="fa-solid fa-arrows-rotate"></i> Adaptability</div>
+        <div class="skill"><i class="fa-solid fa-bolt"></i> Self-Motivation</div>
+        <div class="skill"><i class="fa-solid fa-clock"></i> Time Management</div>
+        <div class="skill"><i class="fa-solid fa-brain"></i> Stress Management</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bahasa Pemrograman & Tools -->
+  <div class="skills"> 
+    <h1 class="skills-t" id="tools">Bahasa Pemrograman & Tools</h1>
+    <div class="container skills-grid">
+      <div class="skill"><img src="./img/Java.png" alt="Java" class="skill-icon"></div>
+      <div class="skill"><img src="./img/javascript.png" alt="JavaScript" class="skill-icon"></div>
+      <div class="skill"><img src="./img/css.png" alt="CSS" class="skill-icon"></div>
+      <div class="skill"><img src="./img/pascal.png" alt="Pascal" class="skill-icon"></div>
+      <div class="skill"><img src="./img/sql.png" alt="SQL" class="skill-icon"></div>
+      <div class="skill"><img src="./img/html.png" alt="HTML" class="skill-icon"></div>
+      <div class="skill"><img src="./img/php.png" alt="PHP" class="skill-icon"></div>
+      <div class="skill"><img src="./img/postman.png" alt="Postman" class="skill-icon"></div>
+      <div class="skill"><img src="./img/react.png" alt="ReactJS" class="skill-icon"></div>
+      <div class="skill"><img src="./img/netbeans.png" alt="Netbeans" class="skill-icon"></div>
+      <div class="skill"><img src="./img/vscode.jpg" alt="Visual Studio" class="skill-icon"></div>
+      <div class="skill"><img src="./img/postgre.png" alt="PostgreSQL" class="skill-icon"></div>
+      <div class="skill"><img src="./img/gcp.png" alt="Google CLoud Platfrom" class="skill-icon"></div>
+    </div>
+  </div>
+
+  <!-- Gelombang bawah -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#0099ff" fill-opacity="1" d="M0,128L0,32L288,32L288,160L576,160L576,32L864,32L864,128L1152,128L1152,96L1440,96L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"></path>
+  </svg>
+
+<!-- Projects -->
+  <div class="main3">
+  <h1 id="projects">My Projects</h1>
+<p>Here are some of the exciting projects I've worked on:</p>
+
+    <div class="container">
+
+      <!-- Desain Web -->
+      <div class="project-category">
+        <h2>Desain Web</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <img src="./img/web.png" alt="PinjamYuk Web" draggable="false">
+            <p>Saya membantu pelanggan untuk meminjam sebuah barang lewat web.</p>
+          </div>
+          <div class="project">
+            <img src="./img/web2.png" alt="PinjamYuk Mobile Web" draggable="false">
+            <p>Katalog barang PinjamYuk! versi mobile dengan tampilan responsif.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desain Aplikasi -->
+      <div class="project-category">
+        <h2>Desain Aplikasi</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <img src="./img/smartmed.png" alt="SmartMed Project" draggable="false">
+            <p>Project Bangkit Academy: SmartMed untuk deteksi tumor otak menggunakan CNN.</p>
+          </div>
+          <div class="project">
+            <img src="./img/smartmed1.png" alt="SmartMed Mobile" draggable="false">
+            <p>Tampilan aplikasi mobile SmartMed dengan fitur login pengguna.</p>
+          </div>
+          <div class="project">
+            <img src="./img/smartmed2.png" alt="SmartMed Mockup Lainnya" draggable="false">
+            <p>Mockup tambahan aplikasi SmartMed untuk memperlihatkan tampilan fitur lainnya.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Certificates -->
+  <div class="main5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L0,32L288,32L288,160L576,160L576,32L864,32L864,128L1152,128L1152,96L1440,96L1440,320L1152,320L1152,320L864,320L864,320L576,320L576,320L288,320L288,320L0,320L0,320Z"></path></svg>
+    <div class="certificates">
+      <h1 id="certificates">Certificates</h1>
+      <p>You can find more of my certificates on my LinkedIn profile here: <a href="https://www.linkedin.com/in/septio-yasin-tiaratomo-458128309/details/certifications/" target="_blank">My LinkedIn</a></p>
+      <div class="container">
+        <div class="certificate">
+          <img src="./img/sertif1.png" alt="HTML certificate">
+        </div>
+        <div class="certificate">
+          <img src="./img/sertif2.png" alt="CSS certificate">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
