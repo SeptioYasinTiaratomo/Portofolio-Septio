@@ -598,7 +598,6 @@ span.ripple {
   background: #1c1c1c;
   border-radius: 15px;
   padding: 15px;
-  max-width: 300px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -606,6 +605,7 @@ span.ripple {
 
 .project img {
   width: 100%;
+	height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
@@ -623,6 +623,12 @@ span.ripple {
   margin-top: 12px;
   font-size: 14px;
   line-height: 1.4;
+}
+
+.project.landscape {
+  /* Membuat item landscape mengambil 2 kolom */
+  grid-column: span 2; 
+  max-width: none;
 }
 
 /* Modal untuk klik gambar */
@@ -645,4 +651,5 @@ span.ripple {
 .modal.show {
   display: flex;
 }
+
 
