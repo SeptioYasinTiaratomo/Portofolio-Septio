@@ -288,17 +288,9 @@ body.navbaractive {
 }
 
 @keyframes borderdown {
-	0% {
-		transform: translateY(0px);
-	}
-
-	50% {
-		transform: translateY(-10px);
-	}
-
-	100% {
-		transform: translateY(0px);
-	}
+	0% { transform: translateY(0px); }
+	50% { transform: translateY(-10px); }
+	100% { transform: translateY(0px); }
 }
 
 .sosmed a i {
@@ -399,157 +391,68 @@ span.ripple {
 	color: black;
 }
 
-.certificate img {
-	width: 100%;
-	max-width: 600px;
-	border-radius: 16px;
-}
-
-.certificate img:hover {
-	transform: scale(1.1);
-}
-
 .certificates .certificate {
 	margin: 20px;
 }
 
 @keyframes shake {
-	0% {
-		transform: translate(0px, 0px);
-	}
-	20% {
-		transform: translate(3px, -1px);
-	}
-	40% {
-		transform: translate(-6px, -1px);
-	}
-	60% {
-		transform: translate(6px, 1px);
-	}
-	80% {
-		transform: translate(-6px, 1px);
-	}
-	100% {
-		transform: translate(0px, 0px);
-	}
+	0% { transform: translate(0px, 0px); }
+	20% { transform: translate(3px, -1px); }
+	40% { transform: translate(-6px, -1px); }
+	60% { transform: translate(6px, 1px); }
+	80% { transform: translate(-6px, 1px); }
+	100% { transform: translate(0px, 0px); }
 }
 
 @keyframes loadinganimate {
-	0% {
-		opacity: 0%;
-		width: 30px;
-		height: 30px;
-	}
-	50% {
-		opacity: 100%;
-/*		width: 100px;
-		height: 100px;*/
-	}
-	100% {
-		opacity: 0%;
-		width: 120px;
-		height: 120px;		
-	}
+	0% { opacity: 0%; width: 30px; height: 30px; }
+	50% { opacity: 100%; }
+	100% { opacity: 0%; width: 120px; height: 120px; }
 }
 
 @keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
+  to { transform: scale(4); opacity: 0; }
 }
 
 @media (max-width: 992px) {
-	.jumbotron-box {
-		margin-top: 0px;
-	}
-
-	.sosmed {
-		margin-top: 20px;
-	}
-
-	.jumbotron {
-		flex-direction: column;
-	}
-
-	.jumbotron-item img {
-		width: 200px;
-		margin-bottom: 40px;
-		animation: none;
-	}
-
+	.jumbotron-box { margin-top: 0px; }
+	.sosmed { margin-top: 20px; }
+	.jumbotron { flex-direction: column; }
+	.jumbotron-item img { width: 200px; margin-bottom: 40px; animation: none; }
 	.navs ul {
 		flex-direction: column;
 		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
+		top: 0; right: 0; left: 0; bottom: 0;
 		background-color: var(--primary);
-		width: 100vw;
-		height: 100vh;
+		width: 100vw; height: 100vh;
 		z-index: 10;
 		align-items: center;
 		justify-content: center;
 		transform: translateX(110%);
 	}
-
-	.navs ul li {
-		margin: 10px;
-	}
-
-	.navs ul li a {
-		font-size: 18px;
-	}
-
-	.navs ul.on {
-		transform: translateX(0%);
-	}
-
-	.navbar-toggler {
-		display: block;
-	}
-
-	.jumbotron-item.notload:nth-child(1) {
-		transform: translateY(-50%);
-		opacity: 0%;
-	}
-
-	.jumbotron-item.notload:nth-child(2) {
-		transform: translateY(50%);
-		opacity: 0%;
-	}
-
-	.project p {
-		font-size: 16px;
-	}
-
-	.project .buttons {
-		justify-content: center;
-	}
+	.navs ul li { margin: 10px; }
+	.navs ul li a { font-size: 18px; }
+	.navs ul.on { transform: translateX(0%); }
+	.navbar-toggler { display: block; }
+	.jumbotron-item.notload:nth-child(1) { transform: translateY(-50%); opacity: 0%; }
+	.jumbotron-item.notload:nth-child(2) { transform: translateY(50%); opacity: 0%; }
+	.project p { font-size: 16px; }
+	.project .buttons { justify-content: center; }
 }
 
 @keyframes borderpop {
-	0% {
-		border: 10px solid black;
-		transform: scale(1);
-	}
-	50% {
-		border: 10px solid white;
-		transform: scale(1.1);
-	}
-	100% {
-		border: 10px solid black;
-		transform: scale(1);
-	}
+	0% { border: 10px solid black; transform: scale(1); }
+	50% { border: 10px solid white; transform: scale(1.1); }
+	100% { border: 10px solid black; transform: scale(1); }
 }
 
 /* Atur ukuran ikon gambar biar sama proporsional dengan font-awesome */
 .skill-icon {
-  width: 80px;        /* ukuran pas, tidak terlalu besar */
+  width: 80px;
   height: 80px;
   object-fit: contain;
-  margin: 0 auto
+  margin: 0 auto;
+  display: block;
 }
 
 /* Grid 2 atau 3 kolom agar tidak panjang ke bawah */
@@ -605,14 +508,15 @@ span.ripple {
 
 .project img {
   width: 100%;
-	height: auto;
+  max-width: 350px;   /* sebelumnya mungkin 250px/300px, ini diperbesar */
+  height: auto;
+  margin: 10px;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
 .project:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transform: scale(1.05);
 }
 
 .project:hover img {
@@ -626,8 +530,7 @@ span.ripple {
 }
 
 .project.landscape {
-  /* Membuat item landscape mengambil 2 kolom */
-  grid-column: span 2; 
+  grid-column: span 2;
   max-width: none;
 }
 
@@ -655,13 +558,12 @@ span.ripple {
 /* Container untuk tata letak 2 kolom utama */
 .projects-grid-custom {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Membagi menjadi 2 kolom */
+  grid-template-columns: 1fr 1fr;
   gap: 25px;
   justify-items: center;
   margin-top: 50px;
 }
 
-/* Kolom kiri dan kanan */
 .project-column-left,
 .project-column-right {
   display: flex;
@@ -670,21 +572,81 @@ span.ripple {
   width: 100%;
 }
 
-/* Menyesuaikan project-item agar pas di dalam kolom */
 .projects-grid-custom .project {
   max-width: 100%;
   width: 100%;
 }
 
-/* Menangani ukuran gambar di dalam tata letak baru */
 .projects-grid-custom .project img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* Menggunakan 'contain' agar gambar tidak terpotong */
+  object-fit: contain;
 }
 
 @media (max-width: 992px) {
-    .projects-grid-custom {
-      grid-template-columns: 1fr; /* Kembali ke 1 kolom pada layar kecil */
-    }
+  .projects-grid-custom {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ✅ Revisi ukuran gambar agar seragam */
+.project img,
+.certificate img {
+  max-width: 300px;   /* batas lebar maksimal */
+  max-height: 300px;  /* batas tinggi maksimal */
+  object-fit: contain; 
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Jika khusus sertifikat mau lebih lebar (karena landscape) */
+.certificate img {
+  width: 100%;
+  max-width:100%;   /* diperbesar supaya lebih jelas */
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Efek hover biar interaktif */
+.certificate img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Modal khusus sertifikat */
+.modal-certificate {
+  display: none;
+  position: fixed;
+  z-index: 1100;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-certificate img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 12px;
+  animation: zoomIn 0.4s ease forwards;
+}
+
+/* Tampilkan modal */
+.modal-certificate.show {
+  display: flex;
+}
+
+/* ✅ Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
