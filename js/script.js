@@ -56,15 +56,34 @@ function toggleDmIG() {
 	}, 500)
 }
 
-document.querySelectorAll('.project img').forEach(img => {
-  img.addEventListener('click', () => {
-    const modal = document.createElement('div');
-    modal.classList.add('modal', 'show');
-    modal.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
-    document.body.appendChild(modal);
+/* ===============================
+   UNIVERSAL MODAL PROJECT & CERTIFICATE
+================================ */
+function openModal(img, type = "project") {
+	const modal = document.createElement("div");
 
-    modal.addEventListener('click', () => {
-      modal.remove();
-    });
-  });
+	// kasih class sesuai tipe
+	if (type === "certificate") {
+		modal.classList.add("modal-certificate", "show");
+	} else {
+		modal.classList.add("modal", "show");
+	}
+
+	modal.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+	document.body.appendChild(modal);
+
+	// klik modal untuk close
+	modal.addEventListener("click", () => {
+		modal.remove();
+	});
+}
+
+// binding untuk project
+document.querySelectorAll(".project img").forEach(img => {
+	img.addEventListener("click", () => openModal(img, "project"));
+});
+
+// binding untuk certificate
+document.querySelectorAll(".certificate img").forEach(img => {
+	img.addEventListener("click", () => openModal(img, "certificate"));
 });
