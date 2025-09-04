@@ -650,3 +650,28 @@ span.ripple {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
+.project-demo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.project-demo .btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #0099ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-demo .btn:hover {
+  background-color: #007acc;
+}
+
+.project-demo {
+  grid-column: 1 / -1; /* tombol ambil 1 baris penuh */
+  text-align: center;
+  margin: 20px 0;
+}
